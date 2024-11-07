@@ -2,6 +2,9 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
+  "author": "SurisCode",
+  "license": "ISC",
+  "description": "Frontend para el challenge de SurisCode de palindromes",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
