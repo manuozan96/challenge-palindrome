@@ -1,19 +1,9 @@
-import cors from 'cors';
-import express, { json } from 'express';
+import { app } from './app.js';
 
-const app = express();
-app.use(cors());
-app.use(json());
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(`App listening on http://localhost:${PORT}!`);
+  console.log('Press CTRL+C to stop\n');
 
-/**
- * Routes for the challenge
- */
-
-// GET /
-app.get('/ping', (req, res) => {
-  res.send('pong');
-});
-
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!');
+  console.log(`See the example routes at http://localhost:${PORT}/ping`);
 });
