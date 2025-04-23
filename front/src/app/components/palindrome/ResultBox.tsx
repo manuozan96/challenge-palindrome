@@ -17,7 +17,7 @@ export default function ResultBox({ result }: Props) {
     >
       <p className="text-lg font-medium">"{result.text}"</p>
       <p className="text-sm">
-        {result.isPalindrome ? "it's a palíndrome" : "it's not a palíndrome"}
+        {result.isPalindrome ? "it's a palindrome" : "it's not a palindrome"}
       </p>
     </div>
   );
